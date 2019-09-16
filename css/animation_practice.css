@@ -1,0 +1,73 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Fjalla One';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes a_fade{
+	0% {opacity: 1; color: black;}
+	65% {opacity: 1; color:  blue;}
+	100% {opacity: 1; color:  black;}
+}
+
+.a{
+	opacity: 0;
+	animation: a_fade 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s infinite ease;
+}
+
+@keyframes t_fade{
+	0% {opacity: 0; color: white;}
+	70% {opacity: 1; color:  orange;}
+	100% {opacity: 1; color:  black;}
+}
+
+.t{
+	opacity: 0;
+	animation: t_fade 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s infinite ease;
+}
+
+@keyframes i_fade{
+	0% {opacity: 0; color: white;}
+	75% {opacity: 1; color:  green;}
+	100% {opacity: 1; color:  black;}
+}
+
+.i{
+	opacity: 0;
+	animation: i_fade 5s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s infinite ease;
+}
+
+@keyframes c_fade{
+	0% {opacity: 0; color: white;}
+	85% {opacity: 1; color:  pink;}
+	100% {opacity: 1; color:  black;}
+}
+
+.c{
+	opacity: 0;
+	animation: c_fade 6s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s infinite ease;
+}
